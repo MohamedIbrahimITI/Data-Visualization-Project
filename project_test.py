@@ -1,4 +1,3 @@
-from tokenize import String
 from dash import Dash
 from dash import dcc
 from dash import html
@@ -54,7 +53,7 @@ def rating(df:pd.DataFrame, title:str):
 
 #Starting the Application
 def main() -> None:
-    df = pd.read_csv("D:\\ITI\\Data Visualization\\labs\\netflix_titles.csv")
+    df = pd.read_csv("netflix_titles.csv")
     app = Dash(external_stylesheets = [dbc.themes.CYBORG])
 
     
